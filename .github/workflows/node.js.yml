@@ -33,6 +33,10 @@ jobs:
         run: npm run test
         working-directory: ./client
 
+      - name: Install gh-pages
+        run: npm install gh-pages --save-dev
+        working-directory: ./client
+
 
       - name: Deploy
         run: |
